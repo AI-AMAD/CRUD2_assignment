@@ -14,8 +14,15 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 
-from django.urls import path
+# main ursl.py는 분기를 나누어주는 역할 
+# 어느 곳으로 갈건지 경로를 표시해주는 곳
+
+from django.urls import path, include
 
 urlpatterns = [
-    
+    path("owners", include("owners.urls")),
+    path("dogs", include("owners.urls"))
 ]
+
+# http://127.0.0.1:8000/ 이 이후에 오는게 path라고 생각하면됨 그러니깐 위에 url패턴대로라면
+# http://127.0.0.1:8000/owners 라고 httpie 에 적어주어야 한다. owners를!

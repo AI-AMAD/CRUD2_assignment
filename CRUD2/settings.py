@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'corsheaders'
+    'corsheaders',
+    'owners'
 ]
 
 MIDDLEWARE = [
@@ -146,3 +147,5 @@ CORS_ALLOW_HEADERS = (
 )
 
 APPEND_SLASH = False
+
+
