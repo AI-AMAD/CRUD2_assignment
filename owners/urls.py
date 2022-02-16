@@ -7,7 +7,7 @@ from owners.views import Dogview, OwnerView
 
 urlpatterns = [
     path("", OwnerView.as_view()),
-    path("/dog", Dogview.as_view()) 
+    path("/dogs", Dogview.as_view()) 
 ]                           
 # as_view 가 해주는 역할 중에 하나로 
 # owner 클래스 안에 http 메소드랑 똑같은 이름이 있다면 그걸 실행해줌(기능까지)

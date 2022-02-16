@@ -21,8 +21,7 @@ from django.urls import path, include
 
 urlpatterns = [
     path("owners", include("owners.urls")),
-    path("dogs", include("owners.urls"))
 ]
 
-# http://127.0.0.1:8000/ 이 이후에 오는게 path라고 생각하면됨 그러니깐 위에 url패턴대로라면
+# http://127.0.0.1:8000/ 이 이후에 오는 url주소가 path의 'owners'라고 생각하면됨 그러니깐 위에 url패턴대로라면
 # http://127.0.0.1:8000/owners 라고 httpie 에 적어주어야 한다. owners를!
